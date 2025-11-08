@@ -3,12 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A modern feature section for SaaS products, showcasing how to collect customer feedback, ask targeted questions, and prioritize improvements to enhance user experience.">
 
     <link
       rel="icon"
       href="resources/favicon.ico"
       type="image/x-icon"
       sizes="96x96"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
     />
 
     <title>Simple Feature Section | devChallenges.io</title>
@@ -22,7 +30,11 @@
       }
 
       body {
+        background-color: #121826;
+        color: #fff;
+        font-family: 'Lato', sans-serif;
         height: 100vh;
+        background-image: url(resources/Background_image.svg);
       }
 
       .author-info {
@@ -35,48 +47,55 @@
       .author-info a {
         text-decoration: none;
       }
+
+      .main-content {
+        display: flex;
+      }
     </style>
   </head>
   <body>
-    <!-- 
-     ✋
-    
-     🥅
-    
-     💬
-    
-     Quality feedbacks for your SaaS products
-    
-     The blocks & components you need
-    
-     Collect Feedback at Multiple Touchpoints
-    
-     Provide a comprehensive understanding of the customer experience.
-    
-     Ask Targeted and Specific Questions
-    
-     Avoid vague or open-ended questions that may not yield actionable insights.
-    
-     Prioritize and Respond to Feedback
-    
-     Communicate the changes or improvements you've made in response to their feedback.
-    
-    -->
-    <img src="resources/Background_image.svg" alt="Background_image">
-    <h1 class="title"></h1>
-    <h2 class="description"></h2>
+    <header>
+      <h1 class="main-title">Quality feedbacks for your SaaS products</h1>
+      <p class="main-description">The blocks & components you need</p>
+    </header>
 
-    <div class="left-window">
-      <div class="icon">✋</div>
-    </div>
+    <main>
+      <div class="main-content">
+        <div class="left-window">
+          <div class="icon">✋</div>
+          <h2 class="window-title">Collect Feedback at Multiple Touchpoints</h2>
+          <p class="window-description">
+            Provide a comprehensive understanding of the customer experience.
+          </p>
+          <img
+            src="resources/photo_2.png"
+            alt="Some People Talking to Each Other"
+          />
+        </div>
 
-    <div class="middle-window">
-      <div class="icon">🥅</div>
-    </div>
+        <div class="middle-window">
+          <div class="icon">🥅</div>
+          <h2 class="window-title">Ask Targeted and Specific Questions</h2>
+          <p class="window-description">
+            Avoid vague or open-ended questions that may not yield actionable
+            insights.
+          </p>
+          <img
+            src="resources/photo_1.png"
+            alt="Some People Talking to Each Other"
+          />
+        </div>
 
-    <div class="right-window">
-      <div class="icon">💭</div>
-    </div>
-
+        <div class="right-window">
+          <div class="icon">💭</div>
+          <h2 class="window-title">Prioritize and Respond to Feedback</h2>
+          <p class="window-description">
+            Communicate the changes or improvements you've made in response to
+            their feedback.
+          </p>
+          <img src="resources/photo_3.png" alt="A Man is Having Seminar" />
+        </div>
+      </div>
+    </main>
   </body>
 </html>
