@@ -18,6 +18,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+      media="all"
+      onload="this.media='all'"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
@@ -71,6 +82,8 @@
         display: block;
         margin: 10px auto 0 auto;
         width: 85%;
+        max-width: 447px; /* prevents it from growing bigger than the intrinsic size */
+        height: auto; /* maintains aspect ratio */
       }
 
       .icon {
@@ -153,8 +166,10 @@
             Provide a comprehensive understanding of the customer experience.
           </p>
           <img
-            src="resources/photo_2.png"
+            src="resources/photo_2.webp"
             alt="Some People Talking to Each Other"
+            width="447"
+            height="323"
           />
         </div>
 
@@ -166,8 +181,10 @@
             insights.
           </p>
           <img
-            src="resources/photo_1.png"
+            src="resources/photo_1.webp"
             alt="Some People Talking to Each Other"
+            width="447"
+            height="323"
           />
         </div>
 
@@ -178,7 +195,12 @@
             Communicate the changes or improvements you've made in response to
             their feedback.
           </p>
-          <img src="resources/photo_3.png" alt="A Man is Having Seminar" />
+          <img
+            src="resources/photo_3.webp"
+            alt="A Man is Having Seminar"
+            width="447"
+            height="323"
+          />
         </div>
       </div>
     </main>
