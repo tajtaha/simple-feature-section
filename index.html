@@ -106,9 +106,32 @@
       .window-description {
         color: #c3c8d3;
         margin: 20px 0 0 25px;
-        max-width: 260px; /* adjust this until all are 3 lines */
+        max-width: 260px;
         line-height: 1.5;
         text-align: left;
+      }
+
+      @media (max-width: 480px) {
+        .main-content {
+          flex-direction: column;
+          gap: 20px;
+          align-items: center;
+          margin-bottom: 30px;
+        }
+
+        .windows {
+          width: 90%;
+          max-width: 350px;
+        }
+      }
+
+      @media (min-width: 481px) and (max-width: 768px) {
+        .main-content {
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 20px;
+          margin-bottom: 30px;
+        }
       }
     </style>
   </head>
