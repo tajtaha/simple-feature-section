@@ -35,7 +35,6 @@
 
     <title>Simple Feature Section | devChallenges.io</title>
 
-    <!--You are welcome to delete these styles or modify them in your own stylesheet -->
     <style>
       * {
         margin: 0;
@@ -77,13 +76,13 @@
         margin-top: 15px;
       }
 
-      img {
+      .images {
         border-radius: 10px;
         display: block;
         margin: 10px auto 0 auto;
         width: 85%;
-        max-width: 447px; /* prevents it from growing bigger than the intrinsic size */
-        height: auto; /* maintains aspect ratio */
+        height: auto;
+        max-width: 447px;
       }
 
       .icon {
@@ -138,7 +137,7 @@
         }
       }
 
-      @media (min-width: 481px) and (max-width: 768px) {
+      @media (min-width: 481px) and (max-width: 980px) {
         .main-content {
           flex-wrap: wrap;
           justify-content: center;
@@ -167,9 +166,12 @@
           </p>
           <img
             src="resources/photo_2.webp"
+            srcset="resources/photo_2.webp 1x, resources/photo_2@2x.webp 2x"
+            sizes="(max-width: 480px) 90vw, 350px"
             alt="Some People Talking to Each Other"
             width="447"
             height="323"
+            class="images"
           />
         </div>
 
@@ -182,9 +184,12 @@
           </p>
           <img
             src="resources/photo_1.webp"
+            srcset="resources/photo_1.webp 1x, resources/photo_1@2x.webp 2x"
+            sizes="(max-width: 480px) 90vw, 350px"
             alt="Some People Talking to Each Other"
             width="447"
             height="323"
+            class="images"
           />
         </div>
 
@@ -197,9 +202,12 @@
           </p>
           <img
             src="resources/photo_3.webp"
+            srcset="resources/photo_3.webp 1x, resources/photo_3@2x.webp 2x"
+            sizes="(max-width: 480px) 90vw, 350px"
             alt="A Man is Having Seminar"
             width="447"
             height="323"
+            class="images"
           />
         </div>
       </div>
